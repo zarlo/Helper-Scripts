@@ -1,9 +1,10 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 dpkg --add-architecture i386
 apt-get update
 apt-get upgrade -y
-apt-get install -y libxml-parser-perl libpath-class-perl perl-modules screen rsync sudo e2fsprogs unzip subversion libarchive-extract-perl pure-ftpd libarchive-zip-perl libc6 libgcc1 git curl
+apt-get install -y libxml-parser-perl libpath-class-perl perl-modules screen rsync sudo e2fsprogs unzip
+apt-get install -y subversion libarchive-extract-perl pure-ftpd libarchive-zip-perl libc6 libgcc1 git curl
 apt-get install -y libstdc++6 libstdc++6:i386 default-jdk
 apt-get install -y libc6-i386 libgcc1:i386
 apt-get install -y lib32gcc1
